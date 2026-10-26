@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Slow Mornings</title>
+  <subtitle>Notes from a small garden and a busy kitchen.</subtitle>
+  <link rel="self" href="https://example.com/blog/feed.xml" />
+  <link rel="alternate" type="text/html" href="https://example.com/blog/" />
+  <id>tag:example.com,2026:blog</id>
+  <updated>2026-10-15T08:00:00Z</updated>
+  <author>
+    <name>Robin Hart</name>
+  </author>
+  <entry>
+    <title>Green tomato chutney</title>
+    <link rel="alternate" type="text/html" href="https://example.com/blog/green-tomato-chutney/" />
+    <id>tag:example.com,2026:blog/green-tomato-chutney</id>
+    <published>2026-10-15T08:00:00Z</published>
+    <updated>2026-10-15T08:00:00Z</updated>
+    <category term="kitchen" />
+    <category term="garden" />
+    <summary>What to do with the tomatoes that won't ripen.</summary>
+    <content type="html" xml:base="https://example.com/blog/green-tomato-chutney/">&lt;p&gt;Every October there's a bowl of green tomatoes that won't ripen. This is where they go.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Chop 1 kg of green tomatoes, 2 onions and 2 apples.&lt;/li&gt;
+&lt;li&gt;Simmer with 300 ml cider vinegar, 250 g brown sugar and a spoon each of mustard seeds and salt.&lt;/li&gt;
+&lt;li&gt;Cook gently for about two hours, until thick, then spoon into clean jars.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Leave it a month before opening. It's better for the wait.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What the tomatoes taught me this year</title>
+    <link rel="alternate" type="text/html" href="https://example.com/blog/tomato-notes/" />
+    <id>tag:example.com,2026:blog/tomato-notes</id>
+    <published>2026-10-08T08:00:00Z</published>
+    <updated>2026-10-08T08:00:00Z</updated>
+    <category term="garden" />
+    <summary>Three varieties, one wet August, and a list for next spring.</summary>
+    <content type="html" xml:base="https://example.com/blog/tomato-notes/">&lt;p&gt;Three varieties went in this year. Here's how they did:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Variety&lt;/th&gt;
+&lt;th&gt;Planted&lt;/th&gt;
+&lt;th&gt;First ripe&lt;/th&gt;
+&lt;th&gt;Verdict&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Gardener's Delight&lt;/td&gt;
+&lt;td&gt;April&lt;/td&gt;
+&lt;td&gt;July&lt;/td&gt;
+&lt;td&gt;Grow again&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;San Marzano&lt;/td&gt;
+&lt;td&gt;April&lt;/td&gt;
+&lt;td&gt;August&lt;/td&gt;
+&lt;td&gt;Worth it for sauce&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Black Krim&lt;/td&gt;
+&lt;td&gt;May&lt;/td&gt;
+&lt;td&gt;September&lt;/td&gt;
+&lt;td&gt;Too late for our summer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="for-next-spring"&gt;For next spring&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Start seeds two weeks earlier.&lt;/li&gt;
+&lt;li&gt;Fewer plants, more space between them.&lt;/li&gt;
+&lt;li&gt;Mulch before the first heat, not after.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Welcome to the blog</title>
+    <link rel="alternate" type="text/html" href="https://example.com/blog/welcome/" />
+    <id>tag:example.com,2026:blog/welcome</id>
+    <published>2026-10-01T08:00:00Z</published>
+    <updated>2026-10-01T08:00:00Z</updated>
+    <category term="news" />
+    <summary>What this blog is, and how it's made.</summary>
+    <content type="html" xml:base="https://example.com/blog/welcome/">&lt;p&gt;This is the first post. Replace it with your own: open the &lt;strong&gt;Blog&lt;/strong&gt; tab in your Pagehaus dashboard, choose a post,
+and write. Press &lt;strong&gt;Publish&lt;/strong&gt; and the page, the list of posts and the RSS feed update together.&lt;/p&gt;
+&lt;p&gt;Posts are written in Markdown, so a line with &lt;code&gt;##&lt;/code&gt; in front makes a heading, &lt;code&gt;**two stars**&lt;/code&gt; make bold text, and
+&lt;code&gt;[words](https://example.com)&lt;/code&gt; make a link. Paste an image into the editor to add it.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

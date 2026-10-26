@@ -1,0 +1,17 @@
+/* Change the colours here: --accent is the featured button and the avatar. */
+:root { --ink:#1d1b19; --muted:#6b645c; --paper:#f6efe6; --card:#ffffff; --accent:#b4532a; --line:#e3d8ca; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f2ece4; --muted:#b3aa9f; --paper:#191715; --card:#24211e; --accent:#e07a4f; --line:#36312c; } }
+* { box-sizing: border-box; }
+body { margin:0; min-height:100vh; background:var(--paper); color:var(--ink); font:17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width:30rem; margin:0 auto; padding:56px 20px 32px; text-align:center; }
+.avatar { width:104px; height:104px; border-radius:50%; object-fit:cover; margin:0 auto 16px; display:grid; place-items:center;
+  background:var(--accent); color:var(--paper); font:700 2.2rem system-ui, sans-serif; }
+h1 { font-size:1.6rem; margin:0 0 6px; }
+.bio { color:var(--muted); margin:0 0 28px; }
+.links { display:grid; gap:12px; }
+.links a { display:block; padding:15px 18px; border:1px solid var(--line); border-radius:14px; background:var(--card);
+  color:var(--ink); font-weight:600; text-decoration:none; transition:transform .12s; }
+.links a:hover { transform:translateY(-2px); border-color:var(--accent); }
+.links a.featured { background:var(--accent); border-color:var(--accent); color:#fff; }
+a { color:var(--accent); }
+footer { margin-top:40px; color:var(--muted); font-size:14px; }

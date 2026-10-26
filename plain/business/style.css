@@ -1,0 +1,32 @@
+:root { --ink:#2b1d14; --muted:#7a6656; --paper:#fbf6ef; --card:#ffffff; --accent:#b4532a; --line:#ecdfd0; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f3e9df; --muted:#c2ad9b; --paper:#1c1511; --card:#261d17; --accent:#f08a5d; --line:#3a2d24; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-header, main, .site-footer { max-width:64rem; margin:0 auto; padding:0 20px; }
+.site-header { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding-top:22px; padding-bottom:22px; border-bottom:1px solid var(--line); }
+.brand { font:700 1.35rem Georgia, serif; color:var(--ink); text-decoration:none; }
+nav { display:flex; gap:20px; flex-wrap:wrap; }
+nav a { color:var(--muted); text-decoration:none; font-weight:500; }
+.page-home .nav-home, .page-menu .nav-menu, .page-contact .nav-contact { color:var(--accent); }
+main { padding-top:32px; padding-bottom:48px; }
+a { color:var(--accent); }
+h1 { font:700 2.6rem/1.1 Georgia, serif; margin:0 0 14px; }
+h2 { font:700 1.25rem Georgia, serif; margin:0 0 8px; }
+.lead { font-size:1.15rem; color:var(--muted); }
+.hero { padding:48px 0 32px; }
+.hero h1 { font-size:clamp(2.4rem,6vw,3.6rem); max-width:16ch; }
+.button { display:inline-block; padding:11px 20px; border-radius:999px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; border:2px solid var(--accent); cursor:pointer; font-size:1rem; }
+.button.ghost { background:transparent; color:var(--accent); }
+.three, .menu { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:16px; }
+.three > div, .menu section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+.menu dl { display:grid; grid-template-columns:1fr auto; gap:8px 12px; margin:0; }
+.menu dd { margin:0; font-weight:600; }
+.two { display:grid; grid-template-columns:1fr 1.2fr; gap:32px; }
+.form { display:grid; gap:12px; }
+.form label { display:grid; gap:4px; font-weight:500; }
+.form input, .form textarea { font:inherit; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); }
+.form .button { justify-self:start; }
+.trap { position:absolute; left:-9999px; }
+.site-footer { display:flex; gap:40px; flex-wrap:wrap; padding-top:24px; padding-bottom:40px; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+.site-footer .badge { flex-basis:100%; margin:0; }
+@media (max-width:640px) { .two { grid-template-columns:1fr; } }

@@ -1,0 +1,27 @@
+:root { --ink:#f5f1e8; --muted:#b9b3a6; --paper:#12141c; --card:#1b1e29; --accent:#facc15; --line:#2c3040; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-header, main, .site-footer { max-width:56rem; margin:0 auto; padding:0 20px; }
+.site-header { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding-top:22px; }
+.brand { font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; }
+nav { display:flex; gap:20px; }
+nav a { color:var(--muted); text-decoration:none; font-weight:600; }
+.page-home .nav-home, .page-about .nav-about { color:var(--accent); }
+main { padding-top:24px; padding-bottom:56px; }
+a { color:var(--accent); }
+.hero { padding:56px 0 40px; }
+.kicker { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:.1em; font-size:.85rem; margin:0; }
+h1 { font-size:clamp(2.6rem,8vw,4.6rem); line-height:1; margin:8px 0 12px; letter-spacing:-.02em; }
+h2 { font-size:1.3rem; margin:40px 0 12px; }
+.lead { font-size:1.2rem; color:var(--muted); }
+.dates { width:100%; border-collapse:collapse; }
+.dates th { text-align:left; color:var(--muted); font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.06em; }
+.dates th, .dates td { padding:12px 8px; border-bottom:1px solid var(--line); }
+.soldout { color:var(--muted); text-decoration:line-through; }
+.signup { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:8px 24px 24px; margin-top:40px; }
+.inline-form { display:flex; gap:8px; flex-wrap:wrap; }
+.inline-form input[type=email] { flex:1 1 16rem; font:inherit; padding:11px 12px; border-radius:8px; border:1px solid var(--line); background:var(--paper); color:var(--ink); }
+.inline-form button { font:inherit; font-weight:700; padding:11px 20px; border:0; border-radius:8px; background:var(--accent); color:#12141c; cursor:pointer; }
+.trap { position:absolute; left:-9999px; }
+.site-footer { border-top:1px solid var(--line); padding-top:20px; padding-bottom:40px; color:var(--muted); font-size:.9rem; }
+@media (max-width:560px) { .dates th:nth-child(3), .dates td:nth-child(3) { display:none; } }

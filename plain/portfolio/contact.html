@@ -1,0 +1,44 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Mira Okafor</title>
+<meta name="description" content="Contact Mira Okafor about a project.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+<header class="site-header">
+  <a class="brand" href="index.html">Mira Okafor</a>
+  <nav>
+    <a class="nav-work" href="index.html">Work</a>
+    <a class="nav-about" href="about.html">About</a>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<h1>Contact</h1>
+<p class="lead">Tell me a little about your project and your timeline. I reply within two working days.</p>
+<form class="form" action="/_form/contact" method="post">
+  <label>Your name <input name="name" required maxlength="100" autocomplete="name"></label>
+  <label>Email <input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+  <label>About the project <textarea name="message" rows="6" required maxlength="5000"></textarea></label>
+  <input type="hidden" name="_redirect" value="/thanks.html">
+  <input type="hidden" name="_subject" value="New project enquiry">
+  <label class="trap" aria-hidden="true">Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+  <button class="button">Send enquiry</button>
+</form>
+
+</main>
+<footer class="site-footer">
+  <p>Mira Okafor · Illustration &amp; graphic design · <a href="mailto:studio@example.com">studio@example.com</a></p>
+  <!-- The "Template by Pagehaus" badge is optional: delete the next line to remove it from every page. -->
+  <p class="badge"><a href="https://pagehaus.app/templates/portfolio" title="Free HTML template by Pagehaus" style="display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid #151515;border-radius:4px;background:#ffffff;color:#151515;font:500 12px/1 system-ui,-apple-system,'Segoe UI',sans-serif;text-decoration:none"><svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true" style="display:block"><circle cx="5" cy="6" r="5" fill="#e63b2e"/><rect x="12" y="1" width="7" height="10" fill="#1f4fd8"/><path d="M21 11 25 1 29 11z" fill="#f5b700"/></svg>Template by Pagehaus</a></p>
+</footer>
+</body>
+</html>
+

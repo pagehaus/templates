@@ -1,0 +1,32 @@
+:root { --ink:#111; --muted:#666; --paper:#fff; --accent:#4338ca; --line:#e8e8e8; }
+@media (prefers-color-scheme: dark) { :root { --ink:#f2f2f2; --muted:#9a9a9a; --paper:#0f0f10; --accent:#a5b4fc; --line:#26262a; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.site-header, main, .site-footer { max-width:72rem; margin:0 auto; padding:0 24px; }
+.site-header { display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; padding-top:28px; }
+.brand { font-weight:700; letter-spacing:.02em; color:var(--ink); text-decoration:none; text-transform:uppercase; }
+nav { display:flex; gap:22px; }
+nav a { color:var(--muted); text-decoration:none; }
+.page-work .nav-work, .page-about .nav-about, .page-contact .nav-contact { color:var(--ink); text-decoration:underline; text-underline-offset:6px; }
+main { padding-top:48px; padding-bottom:56px; }
+a { color:var(--accent); }
+h1 { font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.1; margin:0 0 16px; max-width:22ch; }
+.lead { font-size:1.15rem; color:var(--muted); max-width:44ch; }
+.grid { list-style:none; padding:0; margin:40px 0 0; display:grid; grid-template-columns:repeat(auto-fill,minmax(16rem,1fr)); gap:28px 20px; }
+.grid a { display:grid; gap:4px; color:var(--ink); text-decoration:none; }
+.grid span:not(.thumb) { color:var(--muted); font-size:.95rem; }
+.thumb { display:block; aspect-ratio:4/3; border-radius:6px; margin-bottom:8px; transition:transform .2s; }
+.grid a:hover .thumb { transform:scale(1.02); }
+.p1 { background:linear-gradient(135deg,#f59e0b,#ef4444); }
+.p2 { background:linear-gradient(135deg,#1e1b4b,#7c3aed); }
+.p3 { background:linear-gradient(135deg,#065f46,#a7f3d0); }
+.p4 { background:linear-gradient(135deg,#78350f,#fcd34d); }
+.p5 { background:linear-gradient(135deg,#0c4a6e,#7dd3fc); }
+.p6 { background:linear-gradient(135deg,#be185d,#fbcfe8); }
+.button { display:inline-block; padding:12px 22px; background:var(--ink); color:var(--paper); text-decoration:none; font-weight:600; border:0; cursor:pointer; font-size:1rem; }
+.form { display:grid; gap:14px; max-width:34rem; margin-top:24px; }
+.form label { display:grid; gap:4px; }
+.form input, .form textarea { font:inherit; padding:10px 12px; border:1px solid var(--line); background:var(--paper); color:var(--ink); }
+.form .button { justify-self:start; }
+.trap { position:absolute; left:-9999px; }
+.site-footer { border-top:1px solid var(--line); padding-top:20px; padding-bottom:40px; color:var(--muted); font-size:.9rem; }

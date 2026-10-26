@@ -1,0 +1,26 @@
+<!--#set var="title" value="Visit & contact" -->
+<!--#set var="page" value="contact" -->
+<!--#set var="description" value="Find Rose & Rye Bakery and send us a message." -->
+<!--#include virtual="/includes/header.html" -->
+<h1>Visit &amp; contact</h1>
+<div class="two">
+  <section>
+    <h2>Find us</h2>
+    <p>12 Market Street, Riverside<br>Next to the library, with bike racks out front.</p>
+    <p>Tue–Fri 7am–4pm · Sat–Sun 8am–2pm · Closed Mondays</p>
+  </section>
+  <section>
+    <h2>Send a message</h2>
+    <form class="form" action="/_form/contact" method="post">
+      <label>Name <input name="name" required maxlength="100" autocomplete="name"></label>
+      <label>Email <input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+      <label>Message <textarea name="message" rows="5" required maxlength="4000" placeholder="An order for Saturday, a question…"></textarea></label>
+      <input type="hidden" name="_redirect" value="/thanks.html">
+      <input type="hidden" name="_subject" value="New message from the bakery website">
+      <label class="trap" aria-hidden="true">Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+      <button class="button">Send</button>
+    </form>
+  </section>
+</div>
+
+<!--#include virtual="/includes/footer.html" -->

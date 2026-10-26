@@ -1,0 +1,33 @@
+<!--#set var="title" value="Shows" -->
+<!--#set var="page" value="home" -->
+<!--#set var="description" value="The Night Ferries: upcoming shows and the mailing list." -->
+<!--#include virtual="/includes/header.html" -->
+<section class="hero">
+  <p class="kicker">New album out November 21</p>
+  <h1>The Night Ferries</h1>
+  <p class="lead">Slow-burning folk rock from the harbour side of town.</p>
+</section>
+
+<h2>Upcoming shows</h2>
+<table class="dates">
+  <thead><tr><th>Date</th><th>Venue</th><th>City</th><th></th></tr></thead>
+  <tbody>
+    <tr><td>Fri Nov 21</td><td>The Lantern Room</td><td>Portland</td><td><a href="https://example.com">Tickets</a></td></tr>
+    <tr><td>Sat Nov 29</td><td>Harbor Hall</td><td>Seattle</td><td><a href="https://example.com">Tickets</a></td></tr>
+    <tr><td>Fri Dec 12</td><td>The Dockside</td><td>Vancouver</td><td><span class="soldout">Sold out</span></td></tr>
+  </tbody>
+</table>
+
+<section class="signup">
+  <h2>Join the mailing list</h2>
+  <p>One email when we announce shows or release music. Nothing else.</p>
+  <form class="inline-form" action="/_form/newsletter" method="post">
+    <input name="email" type="email" required maxlength="200" placeholder="you@example.com" aria-label="Your email" autocomplete="email">
+    <input type="hidden" name="_redirect" value="/thanks.html">
+    <input type="hidden" name="_subject" value="New mailing list sign-up">
+    <label class="trap" aria-hidden="true">Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+    <button>Sign up</button>
+  </form>
+</section>
+
+<!--#include virtual="/includes/footer.html" -->

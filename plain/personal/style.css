@@ -1,0 +1,25 @@
+:root { --ink:#1f2328; --muted:#5f6670; --paper:#fdfcfa; --accent:#0f766e; --line:#e6e2da; }
+@media (prefers-color-scheme: dark) { :root { --ink:#e8e6e1; --muted:#a3a7ad; --paper:#151618; --accent:#2dd4bf; --line:#2e3034; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.65 Georgia, "Iowan Old Style", serif; }
+.site-header, main, .site-footer { max-width:42rem; margin:0 auto; padding:0 20px; }
+.site-header { display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; padding-top:28px; }
+.brand { font:700 1.1rem system-ui, sans-serif; color:var(--ink); text-decoration:none; }
+nav { display:flex; gap:18px; font:15px system-ui, sans-serif; }
+nav a { color:var(--muted); text-decoration:none; }
+.page-home .nav-home, .page-notes .nav-notes { color:var(--accent); font-weight:600; }
+main { padding-top:40px; padding-bottom:40px; }
+a { color:var(--accent); }
+h1 { font:700 2.3rem/1.15 system-ui, sans-serif; margin:0 0 12px; }
+h2 { font:700 1.2rem system-ui, sans-serif; margin:40px 0 12px; }
+.lead { font-size:1.15rem; color:var(--muted); margin:0; }
+.intro { display:flex; gap:24px; align-items:center; }
+.avatar { flex:none; width:96px; height:96px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:var(--paper); font:700 2rem system-ui, sans-serif; }
+.cards { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(11rem,1fr)); gap:12px; }
+.cards li { border:1px solid var(--line); border-radius:10px; padding:14px 16px; display:grid; gap:4px; }
+.cards span { color:var(--muted); font-size:.95rem; }
+.links { display:flex; gap:18px; flex-wrap:wrap; font-family:system-ui, sans-serif; }
+.note { border-bottom:1px solid var(--line); padding-bottom:12px; }
+.meta { color:var(--muted); font:14px system-ui, sans-serif; margin-top:-8px; }
+.site-footer { border-top:1px solid var(--line); padding-top:16px; padding-bottom:40px; color:var(--muted); font:14px system-ui, sans-serif; }
+@media (max-width:520px) { .intro { flex-direction:column; align-items:flex-start; } }
