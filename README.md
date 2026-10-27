@@ -28,6 +28,11 @@ in a click and edit it in the browser.
 To get one template: download this repository (**Code → Download ZIP**) and keep the folder you want, or download a
 single template from its page on [pagehaus.app/templates](https://pagehaus.app/templates).
 
+## Learning HTML?
+
+[`learn-html/`](learn-html) is the small site you build in [Learn HTML](https://pagehaus.app/learn/html), a free
+course of eight short lessons, as it is at the end of the course. Compare it with yours as you go.
+
 ## Making it yours
 
 - Replace the example text, names and links (search for `example.com`).

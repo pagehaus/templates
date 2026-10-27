@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Sam Rivera</title>
+  <meta name="description" content="Questions about a recipe, or want a birthday cake? Write to Sam Rivera.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!--#include virtual="/includes/menu.html" -->
+
+  <h1>Say hello</h1>
+  <p>Questions about a recipe, or want a birthday cake? Write to me here.</p>
+
+  <form action="/_form/contact" method="post">
+    <p>
+      <label for="name">Your name</label><br>
+      <input id="name" name="name" required>
+    </p>
+    <p>
+      <label for="email">Your email</label><br>
+      <input id="email" name="email" type="email" required>
+    </p>
+    <p>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </p>
+    <input type="hidden" name="_subject" value="A message from my website">
+    <input type="hidden" name="_redirect" value="/thanks.html">
+    <input name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button>Send</button>
+  </form>
+
+  <!--#include virtual="/includes/footer.html" -->
+</body>
+</html>
